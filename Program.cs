@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Day6Problems num = new Day6Problems();
-            num.Reverse_Number();
+            num.generateNDistinctCouponNum(15);
 
         }
     }
