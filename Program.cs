@@ -5,7 +5,7 @@
         static void Main(string[] args)
         {
             Day6Problems num = new Day6Problems();
-            num.Fibonacci_Series();
+            num.Prime_Number();
 
         }
     }
