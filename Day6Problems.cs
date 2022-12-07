@@ -8,12 +8,20 @@ namespace Day6_LogicalPrograms
 {
     internal class Day6Problems
     {
-        public void Simulate_Stopwatch()
+
+        public void Reverse_Number()
         {
-            Console.WriteLine("\n ");
-            DateTime start = DateTime.Parse(" 7:30");
-            DateTime end = DateTime.Parse(" 16:00 ");
-            Console.WriteLine((end - start).TotalHours);
+            Console.WriteLine("\n");
+            int n, reverse = 0, rem;
+            Console.Write("Enter a number : ");
+            n = int.Parse(Console.ReadLine());
+            while (n != 0)
+            {
+                rem = n % 10;
+                reverse = reverse * 10 + rem;
+                n /= 10;
+            }
+            Console.Write("Reversed Number: " + reverse);
         }
     }
 }
